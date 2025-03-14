@@ -6,12 +6,19 @@
     <link rel="icon" type="image/png" href="./favicon.png" />
     <title>PoKeDex</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="module" crossorigin src="/pokedex/assets/index-BIlkcdXo.js"></script>
+    <!-- Initial loader script - safe for direct inclusion -->
+    <script src="./public/app.js"></script>
+    <script type="module" crossorigin src="/pokedex/assets/main-DdPatzWT.js"></script>
+    <link rel="modulepreload" crossorigin href="/pokedex/assets/index-DZy_lVDc.js">
     <link rel="stylesheet" crossorigin href="/pokedex/assets/index-DkLuiya7.css">
   </head>
   <body>
     <div id="root"></div>
     <div id="portal"></div>
-    <!-- Entry point -->
+    <!--
+      For development only - this will be processed by Vite and removed in the final build
+      We use a comment to wrap this so it doesn't affect production but Vite still processes it
+    -->
+    <!--@vite-ignore-->
   </body>
 </html>
