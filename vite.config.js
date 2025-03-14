@@ -5,4 +5,13 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/pokedex/',
   plugins: [react()],
+  build: {
+    assetsInlineLimit: 0,
+    emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
 })
