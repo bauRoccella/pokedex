@@ -10,9 +10,7 @@ export default defineConfig({
     assetsInlineLimit: 0,
     emptyOutDir: true,
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-      },
+      input: resolve(__dirname, 'index.html'),
     },
   },
 })
