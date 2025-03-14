@@ -4,7 +4,7 @@ import { resolve } from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: 'https://bauroccella.github.io/pokedex/',
+  base: './',
   plugins: [react()],
   build: {
     assetsInlineLimit: 0,
